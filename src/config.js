@@ -33,7 +33,7 @@ function matchEventType(eventName) {
 function buildMessage(primerNombre, courseName) {
   return (
     `Hola, ${primerNombre} 😊 ¿qué tal?\n\n` +
-    `Soy Lucía, no sé si te acuerdas de mí, hablamos hace aproximadamente un mes cuando agendaste una llamada con nosotros.\n\n` +
+    `Hablas con el equipo de Derecho Virtual.\n\n` +
     `Te escribo porque justo ahora se nos han quedado unas cuantas plazas libres en la formación de *${courseName}* y pensé directamente en ti.\n\n` +
     `Y precisamente por eso creo que ahora podría venirte perfecto, porque además esta semana tenemos disponible un descuento especial para nuevas incorporaciones.\n\n` +
     `Si te interesa, dímelo y te cuento todos los detalles encantada 😊.`
