@@ -12,12 +12,6 @@ function firstName(fullName) {
 }
 
 module.exports = async function handler(req, res) {
-  // Verificar autorización
-  const authHeader = req.headers.authorization;
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-
   try {
     // 1. Obtener leads pendientes
     const pending = await getPending(BATCH_SIZE);

@@ -14,12 +14,6 @@ function lastMonthRange() {
 }
 
 module.exports = async function handler(req, res) {
-  // Verificar autorización
-  const authHeader = req.headers.authorization;
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-
   try {
     const { start: eventsFrom, end: eventsUntil } = lastMonthRange();
     const purchasesUntil = new Date();
