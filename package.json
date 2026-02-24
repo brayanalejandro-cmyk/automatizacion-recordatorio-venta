@@ -1,0 +1,20 @@
+{
+  "name": "recordatorio-venta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "node src/index.js sync",
+    "send": "node src/index.js send",
+    "send:5": "node src/index.js send 5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1",
+    "stripe": "^20.3.1"
+  }
+}

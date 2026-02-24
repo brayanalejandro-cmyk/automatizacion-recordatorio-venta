@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/sync.js": { "maxDuration": 120 },
+    "api/cron.js": { "maxDuration": 30 }
+  },
+  "crons": [
+    { "path": "/api/cron", "schedule": "*/20 * * * *" }
+  ]
+}
